@@ -10,11 +10,11 @@ with open(budget_csv, "r") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader, None) # Move past header row
 
-    # Count rows to determine how many months there are
+    #Iterate through file
     for row in csvreader:
-        months += 1
-        profit += int(row[1])
-        changes.append(int(row[1]))
+        months += 1     # Count rows to determine how many months there are
+        profit += int(row[1])   # Calc the sum of profit column
+        changes.append(int(row[1]))     # Create a list with all data from column 2
 
 # Calculate the average change for the profit column 
 for x in range(months-1):
