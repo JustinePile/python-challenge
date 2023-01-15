@@ -10,7 +10,7 @@ with open(budget_csv, "r") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader, None) # Move past header row
 
-    #Iterate through file
+    # Iterate through file
     for row in csvreader:
         months += 1     # Count rows to determine how many months there are
         profit += int(row[1])   # Calc the sum of profit column
@@ -43,5 +43,5 @@ Greatest Decrease in Profits: ${lowest} \n
 print("\n" + results)
 
 # Output results to file
-with open("results.txt", "w") as output:
+with open("analysis\PyBank.txt", "w") as output:
     output.write(results)
