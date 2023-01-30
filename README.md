@@ -14,4 +14,20 @@
 * The total number of votes each candidate won
 * The winner of the election based on popular vote
 
+*PyBank and PyPoll each have thier own directory with a python script, a Resources directory that has the CSV data, and an analysis directory that contains that a text file with the scripts results*
+
+### Directory structure
+PyBank/  
+├─ main.py  
+├─ Resources/  
+│  ├─ budget_data.csv  
+├─ analysis/  
+│  ├─ PyBank.txt  
+PyPoll/  
+├─ main.py  
+├─ analysis/  
+│  ├─ PyPoll.txt  
+├─ Resources/  
+│  ├─ election_data.csv  
+
 ![Screenshot](https://i.imgur.com/y9Bmgsb.png)
